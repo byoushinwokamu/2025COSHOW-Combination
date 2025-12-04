@@ -9,24 +9,24 @@
 Visual Studio Code + PlatformIO IDE
 
 ### 사용 MCU
-Atmel ATtiny85 (Day 1)
-Atmel ATmega328 (Arduino Nano) (Day 2)
+Atmel ATtiny85 (Day 1)\
+Atmel ATmega328 (Arduino Nano) (Day 2)\
 STMicro STM32F401RCT6 (Day 2)
 
 ## 과제 수행 내용
 
 #### Day 1A
-0부터 위로 카운트하는 스톱워치 모드, 설정한 시간부터 아래로 0까지 카운트하는 시한폭탄 모드 두 가지를 구현
-스톱워치는 Start, Stop, Reset, 시한폭탄은 Time set, Start, Pause/Resume 및 카운트 0이 될 때 LED나 buzzer로 알림 기능 필요
-4개의 tact switch 중 하나를 모드 전환 스위치로 사용
+0부터 위로 카운트하는 스톱워치 모드, 설정한 시간부터 아래로 0까지 카운트하는 시한폭탄 모드 두 가지를 구현\
+스톱워치는 Start, Stop, Reset, 시한폭탄은 Time set, Start, Pause/Resume 및 카운트 1이 될 때 LED나 buzzer로 알림 기능 필요\
+4개의 tact switch 중 하나를 모드 전환 스위치로 사용\
 깜빡임 주기 및 표시 방법, 소리 효과 등 차별성에서 추가 점수 부여
 
 #### Day 1B
-4×4 키패드를 추가로 사용하여 호텔 금고 시스템을 구현
-비밀번호 설정 모드, 잠금/열림 모드, 초기화 기능 필요, 각 기능 수행 시 각각 다른 확인 소리 재생
+4×4 키패드를 추가로 사용하여 호텔 금고 시스템을 구현\
+비밀번호 설정 모드, 잠금/열림 모드, 초기화 기능 필요, 각 기능 수행 시 각각 다른 확인 소리 재생\
 7-Segment Display를 이용한 animation, 비밀번호 일정 횟수 이상 불일치 시 lock-out 등 차별성에서 추가 점수 부여
 
 #### Day 2
-64×32 해상도의 P5 LED Panel 두 개를 cascade로 연결해 64×64 해상도의 매트릭스 디스플레이 구현
-BAM 방식을 사용하여 다양한 색을 표현
+64×32 해상도의 P5 LED Panel 두 개를 cascade로 연결해 64×64 해상도의 매트릭스 디스플레이 구현\
+BAM 방식을 사용하여 다양한 색을 표현\
 Arduino Nano로 먼저 구현한 뒤, 추가 SRAM이나 DMA 기능을 위해 STM32 활용하여 추가 구현 가능
